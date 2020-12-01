@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug3|Win32">
+      <Configuration>Debug3</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseE3|Win32">
+      <Configuration>ReleaseE3</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>GUI_EDITOR</ProjectName>
+    <ProjectGuid>{9781D65D-8195-4E63-A2E7-F9DA4D22CA7E}</ProjectGuid>
+    <RootNamespace>GUI_STANDARD</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug3|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseE3|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug3|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseE3|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseE3|Win32'">
+    <OutDir>K:\EXEC\</OutDir>
+    <IntDir>.\ReleaseE3\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>GUI_EDITOR3</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug3|Win32'">
+    <OutDir>.\EXEC\</OutDir>
+    <IntDir>.\Debug3\</IntDir>
+    <LinkIncremental />
+    <TargetName>GUI_TEST</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseE3|Win32'">
+    <Midl>
+      <TypeLibraryName>.\GUI_STANDARD___Win32_Release3/GUI_STANDARD.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;h;k:\h;..\3D\GLUT;..\3D;..\3D\common;..\3D\DevIL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_EDIT_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;Cimsqconsim.lib;Cimsqconio.lib;kutlgui2P2_3.lib;kutlgui3D2_3.lib;kutlgui2E2_3.lib;CimSqConKNFS.lib;ws2_32.lib;msimg32.lib;%(AdditionalDependencies);legacy_stdio_definitions.lib</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>k:\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <StackReserveSize>
+      </StackReserveSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug3|Win32'">
+    <Midl>
+      <TypeLibraryName>.\GUI_STANDARD___Win32_Release3/GUI_STANDARD.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_EDIT_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;msimg32.lib;%(AdditionalDependencies);legacy_stdio_definitions.lib</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>k:\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <StackReserveSize>
+      </StackReserveSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\prg_code.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="H\default.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="backlogin.bmp" />
+    <Image Include="bitmap\backbox.bmp" />
+    <Image Include="bitmap\bitmap_About.bmp" />
+    <Image Include="bitmap\bitmap_m.bmp" />
+    <Image Include="bitmap\bitmap_menutext.bmp" />
+    <Image Include="bitmap\bitmap_menu_exit.bmp" />
+    <Image Include="bitmap\bitmap_Menu_New.bmp" />
+    <Image Include="bitmap\bitmap_menu_Open.bmp" />
+    <Image Include="bitmap\bitmap_menu_Save.bmp" />
+    <Image Include="bitmap\bitmap_menu_Saveas.bmp" />
+    <Image Include="bitmap\bitmap_sc_add.bmp" />
+    <Image Include="bitmap\bitmap_sc_delete.bmp" />
+    <Image Include="bitmap\bitmap_sc_down.bmp" />
+    <Image Include="bitmap\bitmap_sc_first.bmp" />
+    <Image Include="bitmap\bitmap_sc_last.bmp" />
+    <Image Include="bitmap\bitmap_sc_middle.bmp" />
+    <Image Include="bitmap\bitmap_sc_normal.bmp" />
+    <Image Include="bitmap\bitmap_sc_small.bmp" />
+    <Image Include="bitmap\bitmap_sc_up.bmp" />
+    <Image Include="bitmap\bitmap_t.bmp" />
+    <Image Include="bitmap\Button32x32.bmp" />
+    <Image Include="bitmap\Button48x32.bmp" />
+    <Image Include="bitmap\Button48x64.bmp" />
+    <Image Include="bitmap\ButtonCheck.bmp" />
+    <Image Include="bitmap\CB_Close.bmp" />
+    <Image Include="bitmap\CB_DLL.bmp" />
+    <Image Include="bitmap\CB_D_5.bmp" />
+    <Image Include="bitmap\CB_D_6.bmp" />
+    <Image Include="bitmap\CB_D_Arrow1.bmp" />
+    <Image Include="bitmap\CB_D_Arrow2.bmp" />
+    <Image Include="bitmap\CB_D_Arrow3.bmp" />
+    <Image Include="bitmap\CB_D_Arrow4.bmp" />
+    <Image Include="bitmap\CB_D_Box1.bmp" />
+    <Image Include="bitmap\CB_D_Box2.bmp" />
+    <Image Include="bitmap\CB_D_Circle.bmp" />
+    <Image Include="bitmap\CB_D_Curve.bmp" />
+    <Image Include="bitmap\CB_D_Line.bmp" />
+    <Image Include="bitmap\CB_D_Point.bmp" />
+    <Image Include="bitmap\CB_D_PolyGon.bmp" />
+    <Image Include="bitmap\CB_D_PolyLine.bmp" />
+    <Image Include="bitmap\CB_D_Rect1.bmp" />
+    <Image Include="bitmap\CB_D_Rect2.bmp" />
+    <Image Include="bitmap\CB_D_Rect3.bmp" />
+    <Image Include="bitmap\CB_D_Star4.bmp" />
+    <Image Include="bitmap\CB_D_Star5.bmp" />
+    <Image Include="bitmap\CB_D_Star6.bmp" />
+    <Image Include="bitmap\CB_D_Triangle1.bmp" />
+    <Image Include="bitmap\CB_D_Triangle2.bmp" />
+    <Image Include="bitmap\CB_D_Triangle3.bmp" />
+    <Image Include="bitmap\CB_D_Triangle4.bmp" />
+    <Image Include="bitmap\CB_D_Triangle5.bmp" />
+    <Image Include="bitmap\CB_D_Triangle6.bmp" />
+    <Image Include="bitmap\CB_Image.bmp" />
+    <Image Include="bitmap\CB_M_3D.bmp" />
+    <Image Include="bitmap\CB_M_About.bmp" />
+    <Image Include="bitmap\CB_M_Align1.bmp" />
+    <Image Include="bitmap\CB_M_Align2.bmp" />
+    <Image Include="bitmap\CB_M_Align3.bmp" />
+    <Image Include="bitmap\CB_M_Align4.bmp" />
+    <Image Include="bitmap\CB_M_Align5.bmp" />
+    <Image Include="bitmap\CB_M_Align6.bmp" />
+    <Image Include="bitmap\CB_M_BackProp.bmp" />
+    <Image Include="bitmap\CB_M_ConsoleO.bmp" />
+    <Image Include="bitmap\CB_M_ConsoleX.bmp" />
+    <Image Include="bitmap\CB_M_Copy.bmp" />
+    <Image Include="bitmap\CB_M_Cut.bmp" />
+    <Image Include="bitmap\CB_M_Delete.bmp" />
+    <Image Include="bitmap\CB_M_Div1.bmp" />
+    <Image Include="bitmap\CB_M_Div2.bmp" />
+    <Image Include="bitmap\CB_M_Div3.bmp" />
+    <Image Include="bitmap\CB_M_Div4.bmp" />
+    <Image Include="bitmap\CB_M_Div5.bmp" />
+    <Image Include="bitmap\CB_M_Div6.bmp" />
+    <Image Include="bitmap\CB_M_Div7.bmp" />
+    <Image Include="bitmap\CB_M_Div8.bmp" />
+    <Image Include="bitmap\CB_M_Div9.bmp" />
+    <Image Include="bitmap\CB_M_F_Abort.bmp" />
+    <Image Include="bitmap\CB_M_F_Capture.bmp" />
+    <Image Include="bitmap\CB_M_F_Close.bmp" />
+    <Image Include="bitmap\CB_M_F_Event.bmp" />
+    <Image Include="bitmap\CB_M_F_Exit.bmp" />
+    <Image Include="bitmap\CB_M_F_Forward.bmp" />
+    <Image Include="bitmap\CB_M_F_Move.bmp" />
+    <Image Include="bitmap\CB_M_F_OpenE.bmp" />
+    <Image Include="bitmap\CB_M_F_Run.bmp" />
+    <Image Include="bitmap\CB_M_IMAGE_File.bmp" />
+    <Image Include="bitmap\CB_M_IMAGE_Lib.bmp" />
+    <Image Include="bitmap\CB_M_Lang.bmp" />
+    <Image Include="bitmap\CB_M_MemoDelete.bmp" />
+    <Image Include="bitmap\CB_M_MemoInsert.bmp" />
+    <Image Include="bitmap\CB_M_Order1.bmp" />
+    <Image Include="bitmap\CB_M_Order2.bmp" />
+    <Image Include="bitmap\CB_M_Order3.bmp" />
+    <Image Include="bitmap\CB_M_Order4.bmp" />
+    <Image Include="bitmap\CB_M_PageChange1.bmp" />
+    <Image Include="bitmap\CB_M_PageChange2.bmp" />
+    <Image Include="bitmap\CB_M_PageInsert.bmp" />
+    <Image Include="bitmap\CB_M_PageLoad.bmp" />
+    <Image Include="bitmap\CB_M_PageRename.bmp" />
+    <Image Include="bitmap\CB_M_Paste.bmp" />
+    <Image Include="bitmap\CB_M_Popup1.bmp" />
+    <Image Include="bitmap\CB_M_Popup2.bmp" />
+    <Image Include="bitmap\CB_M_Popup3.bmp" />
+    <Image Include="bitmap\CB_M_Popup4.bmp" />
+    <Image Include="bitmap\CB_M_Prop.bmp" />
+    <Image Include="bitmap\CB_M_P_Adapt.bmp" />
+    <Image Include="bitmap\CB_M_P_AutoAdapt.bmp" />
+    <Image Include="bitmap\CB_M_P_AutoLoad.bmp" />
+    <Image Include="bitmap\CB_M_P_AutoSave.bmp" />
+    <Image Include="bitmap\CB_M_P_Cancel.bmp" />
+    <Image Include="bitmap\CB_M_P_CancelSave.bmp" />
+    <Image Include="bitmap\CB_M_P_File.bmp" />
+    <Image Include="bitmap\CB_M_P_Load.bmp" />
+    <Image Include="bitmap\CB_M_P_LoadAdapt.bmp" />
+    <Image Include="bitmap\CB_M_P_LoadIO.bmp" />
+    <Image Include="bitmap\CB_M_P_Save.bmp" />
+    <Image Include="bitmap\CB_M_P_SaveAdapt.bmp" />
+    <Image Include="bitmap\CB_M_P_SaveIO.bmp" />
+    <Image Include="bitmap\CB_M_Replace.bmp" />
+    <Image Include="bitmap\CB_M_Sub1.bmp" />
+    <Image Include="bitmap\CB_M_Sub2.bmp" />
+    <Image Include="bitmap\CB_New.bmp" />
+    <Image Include="bitmap\CB_Open.bmp" />
+    <Image Include="bitmap\CB_Save.bmp" />
+    <Image Include="bitmap\CB_SaveAs.bmp" />
+    <Image Include="bitmap\CB_Text.bmp" />
+    <Image Include="bitmap\Layer1.bmp" />
+    <Image Include="bitmap\Layer2.bmp" />
+    <Image Include="bitmap\Layer3.bmp" />
+    <Image Include="bitmap\LayerX.bmp" />
+    <Image Include="bitmap\LineLeft_l.bmp" />
+    <Image Include="bitmap\LineTop.bmp" />
+    <Image Include="bitmap\ToolBar_00.bmp" />
+    <Image Include="bitmap\ToolBar_01.bmp" />
+    <Image Include="bitmap\ToolBar_02.bmp" />
+    <Image Include="bitmap\ToolBar_03.bmp" />
+    <Image Include="bitmap\ToolBar_04.bmp" />
+    <Image Include="bitmap\ToolBar_05.bmp" />
+    <Image Include="bitmap\ToolBar_06.bmp" />
+    <Image Include="bitmap\ToolBar_SC.bmp" />
+    <Image Include="bitmap\UB_3DConfig.bmp" />
+    <Image Include="bitmap\UB_3DOrder.bmp" />
+    <Image Include="bitmap\UB_3DPlay.bmp" />
+    <Image Include="bitmap\UB_3DScript.bmp" />
+    <Image Include="bitmap\UB_Hide.bmp" />
+    <Image Include="bitmap\UB_HideL.bmp" />
+    <Image Include="bitmap\UB_M_CurrFix.bmp" />
+    <Image Include="bitmap\UB_M_CurrRun.bmp" />
+    <Image Include="bitmap\UB_M_Delete.bmp" />
+    <Image Include="bitmap\UB_M_FixedMenu.bmp" />
+    <Image Include="bitmap\UB_M_Group.bmp" />
+    <Image Include="bitmap\UB_M_Move.bmp" />
+    <Image Include="bitmap\UB_M_ReGroup.bmp" />
+    <Image Include="bitmap\UB_M_UnGroup.bmp" />
+    <Image Include="bitmap\UB_NotSetIO.bmp" />
+    <Image Include="bitmap\UB_SetIO.bmp" />
+    <Image Include="bitmap\UB_Show.bmp" />
+    <Image Include="bitmap\UB_WControl.bmp" />
+    <Image Include="bitmap\UB_WFunction.bmp" />
+    <Image Include="bitmap\UB_WIOName.bmp" />
+    <Image Include="bitmap\UB_WVisible.bmp" />
+    <Image Include="BUTTONICON.bmp" />
+    <Image Include="K:\h\Program_GUI.ico" />
+    <Image Include="Program_GUI.ico" />
+    <Image Include="TREEICON.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cursor2.cur" />
+    <None Include="cursor3.cur" />
+    <None Include="cursor4.cur" />
+    <None Include="cursor5.cur" />
+    <None Include="K:\h\Program_Select.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Gui_Standard.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

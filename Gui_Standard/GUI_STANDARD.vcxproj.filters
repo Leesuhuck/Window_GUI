@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1fd5a98e-05fe-40e8-8754-540caee50204}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b82726a6-9186-462a-bde2-4ba70fd84548}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{de948404-e007-47b9-807f-29b062588be7}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\prg_code.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="H\default.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bitmap\backbox.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="backlogin.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_About.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_m.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_menu_exit.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_Menu_New.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_menu_Open.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_menu_Save.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_menu_Saveas.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_menutext.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_sc_add.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_sc_delete.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_sc_down.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_sc_first.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_sc_last.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_sc_middle.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_sc_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_sc_small.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_sc_up.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\bitmap_t.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\Button32x32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\Button48x32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\Button48x64.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\ButtonCheck.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="BUTTONICON.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_Close.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Arrow1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Arrow2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Arrow3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Arrow4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Box1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Box2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Circle.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Curve.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Line.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Point.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_PolyGon.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_PolyLine.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Rect1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Rect2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Rect3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Star4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Star5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Star6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Triangle1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Triangle2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Triangle3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Triangle4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Triangle5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_D_Triangle6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_DLL.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_Image.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_About.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Align1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Align2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Align3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Align4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Align5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Align6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_BackProp.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_ConsoleO.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_ConsoleX.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Copy.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Cut.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Delete.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Div1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Div2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Div3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Div4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Div5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Div6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Div7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_F_Abort.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_F_Capture.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_F_Close.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_F_Event.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_F_Exit.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_F_Forward.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_F_Move.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_F_OpenE.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_F_Run.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_IMAGE_File.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_IMAGE_Lib.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Lang.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_MemoDelete.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_MemoInsert.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Order1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Order2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Order3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Order4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_Adapt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_AutoAdapt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_AutoLoad.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_AutoSave.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_Cancel.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_CancelSave.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_File.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_Load.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_LoadAdapt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_LoadIO.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_Save.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_SaveAdapt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_P_SaveIO.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_PageChange1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_PageChange2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_PageInsert.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_PageLoad.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_PageRename.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Paste.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Popup1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Popup2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Popup3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Popup4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Prop.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Replace.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Sub1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Sub2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_New.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_Open.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_Save.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_SaveAs.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_Text.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\Layer1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\Layer2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\Layer3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\LayerX.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\LineLeft_l.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\LineTop.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="K:\h\Program_GUI.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Program_GUI.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\ToolBar_00.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\ToolBar_01.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\ToolBar_02.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\ToolBar_03.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\ToolBar_04.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\ToolBar_05.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\ToolBar_06.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\ToolBar_SC.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="TREEICON.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_3DConfig.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_3DOrder.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_3DPlay.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_3DScript.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_Hide.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_HideL.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_M_CurrFix.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_M_CurrRun.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_M_Delete.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_M_FixedMenu.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_M_Group.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_M_Move.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_M_ReGroup.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_M_UnGroup.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_NotSetIO.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_SetIO.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_Show.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_WControl.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_WFunction.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_WIOName.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\UB_WVisible.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Div8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap\CB_M_Div9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cursor2.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor3.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor4.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cursor5.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="K:\h\Program_Select.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Gui_Standard.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
