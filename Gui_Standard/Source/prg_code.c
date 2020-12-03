@@ -1,14 +1,29 @@
 
 #include "default.h"
 
+#define ID_BUTTON_1 1001
+#define ID_BUTTON_2 1002
+#define ID_BUTTON_3 1003
+#define ID_BUTTON_Show 1004
+#define ID_BUTTON_Hide 1005
 //
 BOOL APIENTRY Console_Gui_For_MainEditor_Proc( HWND hdlg , UINT msg , WPARAM wParam , LPARAM lParam ) {
+	HWND h;
 	switch ( msg ) {
 			
 		case WM_DROPFILES:
 			return TRUE;
 			//
 		case WM_CREATE:
+			CreateWindowEx(0, "button", "A", WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 0, 0, 100, 100, hdlg, (HMENU)ID_BUTTON_1, GetModuleHandle(NULL), NULL);
+			CreateWindowEx(0, "button", "B", WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 120, 0, 100, 100, hdlg, (HMENU)ID_BUTTON_2, GetModuleHandle(NULL), NULL);
+			CreateWindowEx(0, "button", "C", WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 240, 0, 100, 100, hdlg, (HMENU)ID_BUTTON_3, GetModuleHandle(NULL), NULL);
+			CreateWindowEx(0, "button", "Show", WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 60, 120, 100, 100, hdlg, (HMENU)ID_BUTTON_Show, GetModuleHandle(NULL), NULL);
+			CreateWindowEx(0, "button", "Hide", WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 180, 120, 100, 100, hdlg, (HMENU)ID_BUTTON_Hide, GetModuleHandle(NULL), NULL);
+
+			h = GetDlgItem(hdlg, ID_BUTTON_1); EnableWindow(h, TRUE);
+			h = GetDlgItem(hdlg, ID_BUTTON_2); EnableWindow(h, FALSE);
+			h = GetDlgItem(hdlg, ID_BUTTON_3); EnableWindow(h, FALSE);
 			return TRUE;
 
 		case WM_TIMER :
@@ -40,7 +55,8 @@ BOOL APIENTRY Console_Gui_For_MainEditor_Proc( HWND hdlg , UINT msg , WPARAM wPa
 			return TRUE;
 
 		case WM_PAINT:
-			return TRUE;
+			printf("Paint");
+			return( DefWindowProc( hdlg, msg, wParam, lParam ) );
 
 		case WM_LBUTTONDOWN:
 			return TRUE;
@@ -61,9 +77,47 @@ BOOL APIENTRY Console_Gui_For_MainEditor_Proc( HWND hdlg , UINT msg , WPARAM wPa
 			return TRUE;
 
 		case WM_CLOSE:
+			printf("WM_Close()\n");
+			DestroyWindow(hdlg);
 			return TRUE;
 
 		case WM_COMMAND:
+
+			switch (wParam)
+			{
+			case ID_BUTTON_1:
+				printf("Î≤ÑÌäº1ÏûÖÎãàÎã§\n");
+				h = GetDlgItem(hdlg, ID_BUTTON_1); EnableWindow(h, FALSE);
+				h = GetDlgItem(hdlg, ID_BUTTON_2); EnableWindow(h, TRUE);
+				h = GetDlgItem(hdlg, ID_BUTTON_3); EnableWindow(h, FALSE);
+				break;
+			case ID_BUTTON_2:
+				printf("Î≤ÑÌäº2ÏûÖÎãàÎã§\n");
+				h = GetDlgItem(hdlg, ID_BUTTON_1); EnableWindow(h, FALSE);
+				h = GetDlgItem(hdlg, ID_BUTTON_2); EnableWindow(h, FALSE);
+				h = GetDlgItem(hdlg, ID_BUTTON_3); EnableWindow(h, TRUE);
+				break;
+			case ID_BUTTON_3:
+				printf("Î≤ÑÌäº3ÏûÖÎãàÎã§\n");
+				h = GetDlgItem(hdlg, ID_BUTTON_1); EnableWindow(h, TRUE);
+				h = GetDlgItem(hdlg, ID_BUTTON_2); EnableWindow(h, FALSE);
+				h = GetDlgItem(hdlg, ID_BUTTON_3); EnableWindow(h, FALSE);
+				break;
+			case ID_BUTTON_Show:
+				printf("Î≤ÑÌäºÏáºÏûÖÎãàÎã§\n");
+				h = GetDlgItem(hdlg, ID_BUTTON_1); ShowWindow(h, SW_SHOW);
+				h = GetDlgItem(hdlg, ID_BUTTON_2); ShowWindow(h, SW_SHOW);
+				h = GetDlgItem(hdlg, ID_BUTTON_3); ShowWindow(h, SW_SHOW);
+				break;
+			case ID_BUTTON_Hide:
+				printf("Î≤ÑÌäº ÌïòÏù¥ÎìúÏûÖÎãàÎã§\n");
+				h = GetDlgItem(hdlg, ID_BUTTON_1); ShowWindow(h, SW_HIDE);
+				h = GetDlgItem(hdlg, ID_BUTTON_2); ShowWindow(h, SW_HIDE);
+				h = GetDlgItem(hdlg, ID_BUTTON_3); ShowWindow(h, SW_HIDE);
+				break;
+			default:
+				break;
+			}
 			return TRUE;
 
 		default:
@@ -76,7 +130,7 @@ BOOL APIENTRY Console_Gui_For_MainEditor_Proc( HWND hdlg , UINT msg , WPARAM wPa
 //---------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------
-// Rc1015 ∏Æº“Ω∫ ƒƒ∆ƒ¿œ ø¿∑˘¥¬ MSDNø° ¿⁄∑·∞° ¿÷¥Ÿ.
+
 //---------------------------------------------------------------------------------------
 
 int WinStandardWindowCreate( char *classname , char *title , long style , long x , long y , long xs , long ys , HWND hdlg , WNDPROC Proc , long icon , long cursor , long back , long menu , long ex ) {
